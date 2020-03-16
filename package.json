@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "name": "@lukeed/ms",
   "repository": "lukeed/ms",
   "description": "A tiny (408B) and fast utility to convert milliseconds to and from strings.",
