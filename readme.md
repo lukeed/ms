@@ -1,11 +1,11 @@
 # ms [![CI](https://github.com/lukeed/ms/workflows/CI/badge.svg)](https://github.com/lukeed/ms/actions) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/ms)](https://codecov.io/gh/lukeed/ms)
 
-> A tiny (408B) and [fast](#benchmarks) utility to convert milliseconds to and from strings.
+> A tiny (414B) and [fast](#benchmarks) utility to convert milliseconds to and from strings.
 
 ---
 
 ***NOTICE:** This is a fork of [zeit/ms](https://github.com/zeit/ms)!*<br>
-In June 2019, I [opened a PR](https://github.com/zeit/ms/pull/120) with signficiant performance and code size improvements. It was closed after 2 years of silence. :cry: A year into my wait, I started anew (this repo), hoping to improve upon my own improvements.
+In June 2019, I [opened a PR](https://github.com/zeit/ms/pull/120) with signficiant performance and code size improvements. After nearly 2 years of silence, it was eventually closed. :cry: A year into my wait, I started anew (this repo), hoping to improve upon my own improvements.
 
 ---
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "@lukeed/ms",
   "repository": "lukeed/ms",
-  "description": "A tiny (408B) and fast utility to convert milliseconds to and from strings.",
+  "description": "A tiny (414B) and fast utility to convert milliseconds to and from strings.",
   "unpkg": "dist/index.min.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
