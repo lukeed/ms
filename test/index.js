@@ -71,7 +71,10 @@ test('parse() :: long', () => {
 	parse('-1.5 hours', -5400000);
 	parse('-.5 hr', -1800000);
 
-	parse('1.5 years', 31557600000 * 1.5);
+	const YEAR = 31557600000;
+	parse('1.5 years', YEAR * 1.5);
+	parse('-12yr', YEAR * -12);
+	parse('6 yrs', YEAR * 6);
 });
 
 
