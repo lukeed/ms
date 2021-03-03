@@ -1,4 +1,4 @@
-# ms [![CI](https://github.com/lukeed/ms/workflows/CI/badge.svg)](https://github.com/lukeed/ms/actions) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/ms)](https://codecov.io/gh/lukeed/ms)
+# ms [![CI](https://github.com/lukeed/ms/workflows/CI/badge.svg)](https://github.com/lukeed/ms/actions) [![codecov](https://badgen.net/codecov/c/github/lukeed/ms)](https://codecov.io/gh/lukeed/ms)
 
 > A tiny (414B) and [fast](#benchmarks) utility to convert milliseconds to and from strings.
 
