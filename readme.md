@@ -5,7 +5,7 @@
 ---
 
 ***NOTICE:** This is a fork of [zeit/ms](https://github.com/zeit/ms)!*<br>
-In June 2019, I [opened a PR](https://github.com/zeit/ms/pull/120) with signficiant performance and code size improvements. It never received feedback :cry:<br>After a year I started anew (this repo), hoping to improve my own improvements.
+In June 2019, I [opened a PR](https://github.com/zeit/ms/pull/120) with signficiant performance and code size improvements. It was closed after 2 years of silence. :cry: A year into my wait, I started anew (this repo), hoping to improve upon my own improvements.
 
 ---
 
@@ -123,8 +123,9 @@ Benchmark :: "format" (long)
 
 ## Credits
 
-This is obviously a fork of [zeit/ms](https://github.com/zeit/ms).<br>
-I opened a [PR in June 2019](https://github.com/zeit/ms/pull/120) that introduced significant performance gains and code reduction &mdash; it was ignored. This repository is a from-scratch implementation that takes the goals of that PR a bit further.
+This is obviously a fork of [zeit/ms](https://github.com/zeit/ms).
+
+I opened a [PR in June 2019](https://github.com/zeit/ms/pull/120) that introduced significant performance gains and code reduction &mdash; it was ignored for nearly two years. This repository is a from-scratch re-implementation that takes the goals of that PR a bit further.
 
 
 ## License
