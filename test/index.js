@@ -78,26 +78,37 @@ test('format()', () => {
 	// seconds
 	format(1000, '1s');
 	format(10000, '10s');
-	format(-1000, '-1s');
 	format(-10000, '-10s');
+	format(-1000, '-1s');
 
 	// minutes
-	format(60 * 1000, '1m');
-	format(60 * 10000, '10m');
-	format(-1 * 60 * 1000, '-1m');
-	format(-1 * 60 * 10000, '-10m');
+	const MIN = 60 * 1000;
+	format(MIN, '1m');
+	format(MIN * 10, '10m');
+	format(MIN * -10, '-10m');
+	format(MIN * -1, '-1m');
 
 	// hours
-	format(60 * 60 * 1000, '1h');
-	format(60 * 60 * 10000, '10h');
-	format(-1 * 60 * 60 * 1000, '-1h');
-	format(-1 * 60 * 60 * 10000, '-10h');
+	const HOUR = 60 * MIN;
+	format(HOUR, '1h');
+	format(HOUR * 10, '10h');
+	format(HOUR * -10, '-10h');
+	format(HOUR * -1, '-1h');
 
 	// days
-	format(24 * 60 * 60 * 1000, '1d');
-	format(24 * 60 * 60 * 10000, '10d');
-	format(-1 * 24 * 60 * 60 * 1000, '-1d');
-	format(-1 * 24 * 60 * 60 * 10000, '-10d');
+	const DAY = HOUR * 24;
+	format(DAY, '1d');
+	format(DAY * 10, '10d');
+	format(DAY * -10, '-10d');
+	format(DAY * -1, '-1d');
+
+	// years
+	const YEAR = 31557600000; // internal
+	format(3.154e10, '365d'); // via Google
+	format(YEAR, '1y');
+	format(YEAR * 10, '10y');
+	format(YEAR * -10, '-10y');
+	format(YEAR * -1, '-1y');
 
 	// rounding
 	format(234234234, '3d');
@@ -141,6 +152,14 @@ test('format() :: long', () => {
 	format(-1 * 24 * 60 * 60 * 1000, '-1 day', true);
 	format(-1 * 24 * 60 * 60 * 1200, '-1 day', true);
 	format(-1 * 24 * 60 * 60 * 10000, '-10 days', true);
+
+	// years
+	const YEAR = 31557600000; // internal
+	format(3.154e10, '365 days', true); // via Google
+	format(YEAR, '1 year', true);
+	format(YEAR * 10, '10 years', true);
+	format(YEAR * -10, '-10 years', true);
+	format(YEAR * -1, '-1 year', true);
 
   // rounding
 	format(234234234, '3 days', true);
