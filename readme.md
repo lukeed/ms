@@ -91,7 +91,7 @@ Whether or not the output should use the interval's long/full form; eg `hour` or
 
 ## Benchmarks
 
-> Running on Node.js v10.13.0
+> Running on Node.js v12.18.4
 
 ```
 Validation :: parse
@@ -99,12 +99,12 @@ Validation :: parse
   ✔ zeit/ms
 
 Benchmark :: "parse"
-  lukeed/ms      x 361,730 ops/sec ±0.67% (94 runs sampled)
-  zeit/ms        x 259,837 ops/sec ±0.96% (94 runs sampled)
+  lukeed/ms      x 351,319 ops/sec ±0.31% (96 runs sampled)
+  zeit/ms        x 245,576 ops/sec ±1.66% (94 runs sampled)
 
 Benchmark :: "parse" (long)
-  lukeed/ms      x 344,622 ops/sec ±1.62% (93 runs sampled)
-  zeit/ms        x 288,296 ops/sec ±0.19% (96 runs sampled)
+  lukeed/ms      x 335,538 ops/sec ±0.50% (94 runs sampled)
+  zeit/ms        x 265,410 ops/sec ±1.72% (95 runs sampled)
 
 
 Validation :: format
@@ -112,12 +112,12 @@ Validation :: format
   ✔ zeit/ms
 
 Benchmark :: "format"
-  lukeed/ms      x 2,619,159 ops/sec ±0.40% (97 runs sampled)
-  zeit/ms        x 2,658,101 ops/sec ±0.30% (95 runs sampled)
+  lukeed/ms      x 4,109,440 ops/sec ±0.35% (94 runs sampled)
+  zeit/ms        x 3,420,198 ops/sec ±1.61% (94 runs sampled)
 
 Benchmark :: "format" (long)
-  lukeed/ms      x 1,929,333 ops/sec ±0.51% (93 runs sampled)
-  zeit/ms        x 1,390,717 ops/sec ±0.52% (94 runs sampled)
+  lukeed/ms      x 3,402,872 ops/sec ±0.14% (97 runs sampled)
+  zeit/ms        x 1,344,908 ops/sec ±3.68% (96 runs sampled)
 ```
 
 
