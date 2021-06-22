@@ -4,7 +4,7 @@
 
 ---
 
-***NOTICE:** This is a fork of [zeit/ms](https://github.com/zeit/ms)!*<br>
+***NOTICE:** This is a fork of [vercel/ms](https://github.com/vercel/ms)!*<br>
 In June 2019, I [opened a PR](https://github.com/zeit/ms/pull/120) with signficiant performance and code size improvements. After nearly 2 years of silence, it was eventually closed. :cry: A year into my wait, I started anew (this repo), hoping to improve upon my own improvements.
 
 ---
