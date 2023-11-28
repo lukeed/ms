@@ -1,6 +1,6 @@
 {
   "umd:name": "ms",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "name": "@lukeed/ms",
   "repository": "lukeed/ms",
   "description": "A tiny (414B) and fast utility to convert milliseconds to and from strings.",
