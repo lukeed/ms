@@ -32,3 +32,5 @@ export function format(num, long) {
 	if (abs < YEAR) return fmt(abs / DAY, pfx, 'day', long);
 	return fmt(abs / YEAR, pfx, 'year', long);
 }
+
+export default (arg0, arg1) => (typeof arg0 === 'number' ? format : parse)(arg0, arg1)
