@@ -58,9 +58,9 @@ format(parse('10 hours'), true); //=> '10 hours'
 ## API
 
 ### ms.parse(input)
-Returns: `Number`
+Returns: `Number`| `undefined`
 
-Parses the input string, returning the number of milliseconds.
+Parses the input string, returning the number of milliseconds or `undefined` if the value can't be parsed successfully.
 
 #### input
 Type: `String`
