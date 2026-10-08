@@ -7,7 +7,8 @@ var RGX = /^(-?(?:\d+)?\.?\d+) *(m(?:illiseconds?|s(?:ecs?)?))?(s(?:ec(?:onds?|s
 
 export function parse(val) {
 	var num, arr = val.toLowerCase().match(RGX);
-	if (arr != null && (num = parseFloat(arr[1]))) {
+	if (arr != null) {
+		num = parseFloat(arr[1]);
 		if (arr[3] != null) return num * SEC;
 		if (arr[4] != null) return num * MIN;
 		if (arr[5] != null) return num * HOUR;

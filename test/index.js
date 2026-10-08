@@ -174,4 +174,14 @@ test('format() :: long', () => {
 });
 
 
+test('parse() :: zero durations', () => {
+	for (const input of ['0', '0.0', '.0', '0ms', '0s', '0m', '0h', '0d', '0w', '0y', '0 seconds', '0 minutes', '0 HOURS']) {
+		parse(input, 0);
+	}
+	assert.ok(Object.is(ms.parse('-0ms'), -0));
+	assert.ok(Object.is(ms.parse('-0.0 seconds'), -0));
+	parse('zero', undefined);
+	parse('0 unknown', undefined);
+});
+
 test.run();
